@@ -1,0 +1,40 @@
+Arraylist program
+
+package collection;
+import java.util.ArrayList;
+import java.util.Collections;
+public class Arraylist {
+
+	public static void main(String[] args) {
+		ArrayList<Integer> obj =new ArrayList<Integer>();
+		//add the element.
+		obj.add(10);
+		obj.add(30);
+		obj.add(20);
+		obj.add(40);
+		System.out.println(obj);
+		//sort the element
+		Collections.sort(obj);
+		System.out.println(obj);
+		//remove the element
+		obj.remove(3);
+		System.out.println(obj);
+		//add number in between
+		obj.add(3, 40);
+		System.out.println(obj);
+		//loops
+		for(int i=0;i<obj.size();i++)
+		{
+			System.out.println(obj.get(i));
+		}
+		//get the element
+		int element=obj.get(1);
+		System.out.println("element in first index is"+element);
+		//size of element
+		int size=obj.size();
+		System.out.println(size);
+		//delete all the element
+		obj.clear();
+		System.out.println(obj);
+	}
+}

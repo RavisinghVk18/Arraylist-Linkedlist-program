@@ -1,0 +1,49 @@
+Linkedlist
+
+package collection;
+import java.util.LinkedList;
+import java.util.Iterator;
+public class Linkedlist {
+
+	public static void main(String[] args) {
+		LinkedList<String> obj=new LinkedList<>();
+		obj.add("msd");
+		obj.add("virat");
+		obj.add("raina");
+		obj.add("jadeja");
+		obj.add("siraj");
+		System.out.println(obj);
+		//add first element
+		obj.addFirst("sachin");
+		System.out.println(obj);
+		//add last element
+		obj.addLast("yuzi");
+		System.out.println(obj);
+		//remove first element
+		obj.removeFirst();
+		System.out.println(obj);
+		//remove last element
+		obj.removeLast();
+		System.out.println(obj);
+		//get the element
+				String element=obj.get(0);
+				System.out.println(element);
+		//remove the element
+		obj.remove(4);
+		System.out.println(obj);
+		//size 
+		int size=obj.size();
+		System.out.println(size);
+		//loop
+		Iterator<String> it=obj.iterator();
+		while(it.hasNext())
+		{
+			String new_val=it.next();
+		System.out.println(new_val+" index="+obj.indexOf(new_val));	
+		}
+		//delete the element
+		obj.clear();
+		System.out.println(obj);
+	}
+}
+		
